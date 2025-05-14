@@ -22,35 +22,57 @@ Finally, an interactive map was created using the folium and folium.plugins libr
 ## Appendices
 ### Appendix A - Input Datasets
 All datasets exported as shapefiles from ArcGIS Pro using Data > Export Features.
--	NovaScotiaCounties (Counties GeoDataFrame)
+<br><br>
+NovaScotiaCounties (Counties GeoDataFrame)
 -	https://services.arcgis.com/9PtzeAadJyclx9t7/arcgis/rest/services/NovaScotiaCounties/FeatureServer
 -	Coordinate System: NAD83(CSRS) / UTM Zone 20N
 -	Courtesy of: Statistics Canada and Dave MacLean
--	NSForest_Pg (view) (Forest GeoDataFrame)
+<br>
+
+NSForest_Pg (view) (Forest GeoDataFrame)
+<br>
 -	https://services.arcgis.com/9PtzeAadJyclx9t7/arcgis/rest/services/NSForest_Pg_view/FeatureServer
 -	Coordinate System: NAD_1983_UTM_Zone_20N
 -	Courtesy of: Nova Scotia Department of Lands and Forestry, Forestry Division and Dave MacLean
--	NSSoilsPg (view) (Soils GeoDataFrame)
+<br>
+
+NSSoilsPg (view) (Soils GeoDataFrame)
+<br>
 -	https://services.arcgis.com/9PtzeAadJyclx9t7/arcgis/rest/services/NSSoilsPg_(view)/FeatureServer
 -	Coordinate System: NAD_1983_UTM_Zone_20N
 -	Courtesy of: Nova Scotia Department of Natural Resources and Renewables and Dave MacLean
--	Sites for First Location (FirstSites GeoDataFrame)
+<br>
+
+Sites for First Location (FirstSites GeoDataFrame)
+<br>
 -	https://services.arcgis.com/9PtzeAadJyclx9t7/arcgis/rest/services/Sites_for_First_Location/FeatureServer
 -	Coordinate System: NAD_1983_UTM_Zone_20N
 -	Courtesy of: Dave MacLean
--	Sites for Second Location (SecondSites GeoDataFrame)
+<br>
+
+Sites for Second Location (SecondSites GeoDataFrame)
+<br>
 -	https://services.arcgis.com/9PtzeAadJyclx9t7/arcgis/rest/services/Sites_for_second_location/FeatureServer 
 -	Coordinate System: NAD_1983_UTM_Zone_20N
 -	Courtesy of: Dave MacLean
--	Sites for Third Location (ThirdSites GeoDataFrame)
+<br>
+
+Sites for Third Location (ThirdSites GeoDataFrame)
+<br>
 -	https://services.arcgis.com/9PtzeAadJyclx9t7/arcgis/rest/services/Sites_for_third_location/FeatureServer 
 -	Coordinate System: NAD_1983_UTM_Zone_20N
 -	Courtesy of: Dave MacLean
--	Sites for Fourth Location (FourthSites GeoDataFrame)
+<br>
+
+Sites for Fourth Location (FourthSites GeoDataFrame)
+<br>
 -	https://services.arcgis.com/9PtzeAadJyclx9t7/arcgis/rest/services/Sites_for_fourth_location/FeatureServer 
 -	Coordinate System: NAD_1983_UTM_Zone_20N
 -	Courtesy of: Dave MacLean
--	Sites for Fifth Location (FifthSites GeoDataFrame)
+<br>
+
+Sites for Fifth Location (FifthSites GeoDataFrame)
+<br>
 -	https://services.arcgis.com/9PtzeAadJyclx9t7/arcgis/rest/services/Sites_for_fifth_location/FeatureServer 
 -	Coordinate System: NAD_1983_UTM_Zone_20N
 -	Courtesy of: Dave MacLean
@@ -59,29 +81,29 @@ All datasets exported as shapefiles from ArcGIS Pro using Data > Export Features
 
 ### Appendix B - Frequency Table (First 12 Records)
 
-COUNTY	Descriptio	SP1	HEIGHT	SOILNAME	STONINESS	Count	Total_Area_ha
-Annapolis County	Annapolis Possible Site	BF	11	Bridgetown	2	1	1.90813
-Annapolis County	Annapolis Possible Site	RM	13	Bridgetown	2	1	0.64928
-Annapolis County	Annapolis Possible Site	RM	15	Bridgetown	2	1	0.75846
-Annapolis County	Annapolis Possible Site	SM	18	Bridgetown	2	1	0.14183
-Annapolis County	Annapolis Possible Site	SM	18	Horton	-	1	0.78403
-Annapolis County	Annapolis Possible Site	US	4	Bridgetown	2	1	2.53982
-Annapolis County	Annapolis Possible Site	US	4	Horton	-	1	0.27569
-Colchester County	North Colchester Possible Site	BS	10	Pugwash	1	1	0.36585
-Colchester County	North Colchester Possible Site	BS	13	Pugwash	1	2	1.48587
-Colchester County	North Colchester Possible Site	BS	13	Stewiacke	0	2	0.82144
-Colchester County	North Colchester Possible Site	EH	13	Pugwash	1	1	0.69931
-Colchester County	North Colchester Possible Site	EH	13	Queens	1	1	0.49350
-
+| COUNTY | Descriptio | SP1 | HEIGHT | SOILNAME | STONINESS | Count | Total_Area_ha |
+| ------------- | ------------- |------------- | ------------- |
+| Annapolis County | Annapolis Possible Site | BF | 11 | Bridgetown | 2 | 1 | 1.90813 |
+| Annapolis County | Annapolis Possible Site | RM | 13 | Bridgetown | 2 | 1 | 0.64928 |
+| Annapolis County | Annapolis Possible Site | RM | 15 | Bridgetown | 2 | 1 | 0.75846 |
+| Annapolis County | Annapolis Possible Site | SM | 18 | Bridgetown | 2 | 1 | 0.14183 |
+| Annapolis County | Annapolis Possible Site | SM | 18 | Horton | - | 1 | 0.78403 |
+| Annapolis County | Annapolis Possible Site | US | 4 | Bridgetown | 2 | 1 | 2.53982 |
+| Annapolis County | Annapolis Possible Site | US | 4 | Horton | - | 1 | 0.27569 |
+| Colchester County | North Colchester Possible Site | BS | 10 | Pugwash | 1 | 1 | 0.36585 |
+| Colchester County | North Colchester Possible Site | BS | 13 | Pugwash | 1 | 2 | 1.48587 |
+| Colchester County | North Colchester Possible Site | BS | 13 | Stewiacke | 0 | 2 | 0.82144 |
+| Colchester County | North Colchester Possible Site | EH | 13 | Pugwash | 1 | 1 | 0.69931 |
+| Colchester County | North Colchester Possible Site | EH | 13 | Queens | 1 | 1 | 0.49350 |
 
 ### Appendix C – Projections
-
-Dataset Name	Original CRS	Reprojected CRS	Purpose of Reprojection
-FirstSites–FifthSites	NAD_1983_UTM_Zone_20N (EPSG:26920)	No reprojection required	All mine site shapefiles already in correct CRS
-Counties	NAD83(CSRS) / UTM Zone 20N (EPSG:2961)	Reprojected to EPSG:26920	Aligned for intersection with site buffers
-Forest	NAD_1983_UTM_Zone_20N (EPSG:26920)	Confirmed/reprojected to EPSG:26920	Ensures accuracy for overlay and area calculations
-Soils	NAD_1983_UTM_Zone_20N (EPSG:26920)	Confirmed/reprojected to EPSG:26920	Ensures accuracy for overlay and area calculations
-SiteLabels (Centroids)	NAD_1983_UTM_Zone_20N (EPSG:26920)	Reprojected to WGS 84 (EPSG:4326)	Needed for latitude/longitude input for labels in folium map
+| Dataset Name     | Original CRS   |   Reprojected CRS  |   Purpose of Reprojection   |
+| ------------- | ------------- |------------- | ------------- |
+| FirstSites–FifthSites | NAD_1983_UTM_Zone_20N (EPSG:26920) | No reprojection required | All mine site shapefiles already in correct CRS |
+| Counties | NAD83(CSRS) / UTM Zone 20N (EPSG:2961) | Reprojected to EPSG:26920 | Aligned for intersection with site buffers |
+| Forest | NAD_1983_UTM_Zone_20N (EPSG:26920) | Confirmed/reprojected to EPSG:26920 | Ensures accuracy for overlay and area calculations |
+| Soils | NAD_1983_UTM_Zone_20N (EPSG:26920) | Confirmed/reprojected to EPSG:26920 | Ensures accuracy for overlay and area calculations |
+| SiteLabels (Centroids) | NAD_1983_UTM_Zone_20N (EPSG:26920) | Reprojected to WGS 84 (EPSG:4326) | Needed for latitude/longitude input for labels in folium map |
 
 Note: Reprojection was performed using the .to_crs() method in GeoPandas. The SiteLabels dataset was the only layer reprojected to a geographic coordinate system (EPSG:4326) because Folium requires all coordinates for marker placement to be in latitude/longitude format.
 
@@ -100,7 +122,7 @@ Note: Reprojection was performed using the .to_crs() method in GeoPandas. The Si
 -	Created by using copy.deepcopy() function to copy IntersectedSites for labelling
 
 ### Appendix E - Final Interactive Map Screen Capture
-
+![logo](https://github.com/CharlesBlanchard2/potential-mine-sites-NS/blob/main/images/Picture1.png)
 
 
 ### Appendix F – Software Versions
