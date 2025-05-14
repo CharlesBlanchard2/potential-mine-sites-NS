@@ -9,13 +9,16 @@ In order to learn and explore GeoPandas I chose to recreate Assignment 3 from GI
 -	Perform geoprocessing on this data
 -	Generate a frequency table
 -	Create an interactive map of mine sites with styling, tooltips, labels, and clustering
-These steps will be detailed in the coming section of the report, followed by a summary of learning strategies, a discussion section, and references/appendices.
-Storing Data as GeoDataFrames
+
+## Storing Data as GeoDataFrames
 This script begins by importing several spatial datasets—mine site locations and environmental resource layers (counties, forests, and soils)—as GeoDataFrames using the GeoPandas library (Appendix A). Each group of potential mine sites (FirstSites through FifthSites) was loaded individually, along with shapefiles representing natural resource information. These datasets were reprojected to a common coordinate reference system (UTM NAD83 Zone 20) to ensure accurate spatial analysis (Appendix C).
+
 ## Geoprocessing
 Next, the script performed a series of geoprocessing tasks. Each set of mine sites was buffered based on a site-specific distance stored in the BUFF_DIST attribute. The resulting buffered geometries were plotted for visualization. All buffered site layers were then merged into a single GeoDataFrame, with a unique site ID added to distinguish between site groups. Spatial overlay operations were performed to intersect the buffered sites with the counties, forest types, and soil layers (Appendix D). These intersections helped identify the environmental and regulatory context of each potential mine site.
+
 ## Frequency Table
 Following the geoprocessing, the script calculated a frequency table summarizing the intersected data. This included calculating the area of each intersected polygon in hectares and grouping the data by county, tree species, soil type, and stoniness to count occurrences and total area per category (Appendix B). The script also standardized tree species names and stoniness ratings using dictionary mappings for improved readability in the final legend (Colville et al., 2002).
+
 ## Interactive Map
 Finally, an interactive map was created using the folium and folium.plugins libraries. Layers were styled to show dominant tree types and stoniness levels, each with its own symbology and legend. Tooltips displayed relevant attributes, such as site name, dominant tree, and soil type. A custom label system was built using marker clusters and styled pop-ups that summarize key characteristics of each site. Layer controls were added to allow users to toggle visibility of map elements. The final product was a detailed, interactive visualization of potential mine sites within their environmental and regulatory contexts (Appendix E).
 
@@ -80,9 +83,8 @@ Sites for Fifth Location (FifthSites GeoDataFrame)
 
 
 ### Appendix B - Frequency Table (First 12 Records)
-
 | COUNTY | Descriptio | SP1 | HEIGHT | SOILNAME | STONINESS | Count | Total_Area_ha |
-| ------------- | ------------- |------------- | ------------- |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Annapolis County | Annapolis Possible Site | BF | 11 | Bridgetown | 2 | 1 | 1.90813 |
 | Annapolis County | Annapolis Possible Site | RM | 13 | Bridgetown | 2 | 1 | 0.64928 |
 | Annapolis County | Annapolis Possible Site | RM | 15 | Bridgetown | 2 | 1 | 0.75846 |
@@ -110,16 +112,16 @@ Note: Reprojection was performed using the .to_crs() method in GeoPandas. The Si
 
 
 ### Appendix D - Intermediate Datasets
--	AllSites GeoDataFrame
--	Created using pandas.concat() to merge all site GeoDataFrames together
--	SiteCounties, SiteForest, and SiteSoils GeoDataFrames
--	Created by intersecting AllSites with each dataset using .overlay() function
--	IntersectedSites GeoDataFrame
--	Created by intersecting AllSites with SiteForest, SiteCounties, and SiteSoils
--	freq_table Table
--	Created by using .groupby() and .agg() functions to make frequency table
--	SiteLabels GeoDataFrame
--	Created by using copy.deepcopy() function to copy IntersectedSites for labelling
+  -	AllSites GeoDataFrame
+    -	Created using pandas.concat() to merge all site GeoDataFrames together
+  -	SiteCounties, SiteForest, and SiteSoils GeoDataFrames
+    -	Created by intersecting AllSites with each dataset using .overlay() function
+  -	IntersectedSites GeoDataFrame
+    -	Created by intersecting AllSites with SiteForest, SiteCounties, and SiteSoils
+  -	freq_table Table
+    -	Created by using .groupby() and .agg() functions to make frequency table
+  -	SiteLabels GeoDataFrame
+    -	Created by using copy.deepcopy() function to copy IntersectedSites for labelling
 
 ### Appendix E - Final Interactive Map Screen Capture
 ![logo](https://github.com/CharlesBlanchard2/potential-mine-sites-NS/blob/main/images/Picture1.png)
